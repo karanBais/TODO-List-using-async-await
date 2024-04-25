@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="text-center ">TODO LIST</h1>
+    <form action="" class="d-flex flex-column mx-auto w-50">
+        <label for="task">TASK:</label>
+        <input type="text" id="task-todo" name="task" class="bg-light border border-light" />
+
+        <label for="description">Description:</label>
+        <input type="text" id="disc-todo" name="description" class="bg-light border border-light" />
+
+        <button type="button" onclick="addTodo()" class=" mt-2 btn btn-primary">Add</button>
+    </form> 
+
+    <ul id="todo-list" class="text-center"></ul>
+
+    <h1 class=" text-center"> TASK DONE</h1>
+
+    <ul id="done-list" class="text-center"></ul>
+    
+    <script src="todo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
